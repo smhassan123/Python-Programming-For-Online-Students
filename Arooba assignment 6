@@ -1,0 +1,145 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Q.1 Object Oriented Programming Language:\n",
+    "#### Object-oriented programming (OOP) is a programming language model in which programs are organized around data, or objects, rather than functions and logic"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Q.2 Benefites of OOP:\n",
+    "#### 1. Modularity for easier troubleshooting.\n",
+    "#### 2. Reuse of code through inheritance.\n",
+    "#### 3. Flexibility through polymorphism.\n",
+    "#### 4. Effective problem solving."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Q.3 Difference Between Function and Method.\n",
+    "#### 1. Function: A function is a piece of code that is called by name. It can be passed data to operate on (i.e. the parameters) and can optionally return data (the return value). All data that is passed to a function is explicitly passed.\n",
+    "#### 2. Method: A method is a piece of code that is called by a name that is associated with an object. In most respects it is identical to a function except for two key differences:\n",
+    "\n",
+    "#### A method is implicitly passed the object on which it was called.\n",
+    "#### A method is able to operate on data that is contained within the class (remembering that an object is an instance of a class - the class is the definition, the object is an instance of that data).\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Q.4 Define the following terms.\n",
+    "##### 1. Class: A class in object-oriented programming serves as a blueprint for the object. A class can be considered as a map for the house. You can get an idea of what the house looks like by simply seeing the map.\n",
+    "##### 2. Object: An object is also called an instance; therefore, the process of creating an object of a class is called instantiation. In Python, to create an object of a class we simply need to write the class name followed by opening and closing parenthesis.\n",
+    "##### 3. Attribute: In Python, every object has some default attributes and methods in addition to user-defined attributes.\n",
+    "##### 4. Behavior: the way in which a machine or natural phenomenon works or functions."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'the name of car is suzuki cultus 2015'"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "class Car():\n",
+    "    def __init__(self, name,colour,year,company,miles):\n",
+    "        self.name = name\n",
+    "        self.colour=colour\n",
+    "        self.year = year\n",
+    "        self.company = company\n",
+    "        self.miles = miles\n",
+    "    def description(self):\n",
+    "        full_name= f\"the name of car is {self.company} {self.name} {self.year}\"\n",
+    "        return full_name\n",
+    "    def color(self):\n",
+    "        print (f\"The colour of the car is {self.colour}\")\n",
+    "    def read_odometer(self):\n",
+    "        print (f\"the car has run  {self.miles} miles\")\n",
+    "        \n",
+    "Car = Car('cultus','white',2015,'suzuki',4150)\n",
+    "\n",
+    "Car.description()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "the car has run  4150 miles\n"
+     ]
+    }
+   ],
+   "source": [
+    "Car.read_odometer()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The colour of the car is white\n"
+     ]
+    }
+   ],
+   "source": [
+    "Car.color()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
